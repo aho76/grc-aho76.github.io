@@ -75,7 +75,7 @@ html, body {
 	border-radius: 30px 30px; /* this made the corners of the rectangle curved */
  	background: rgba(208, 191, 255, 0.50); /*this uses opacity of 50% for the background color*/
 	text-align: center;
-	border: 4px solid white;
+	/* removed border: 4px solid white; */
 }
 
    
@@ -95,6 +95,7 @@ h1 {
 	font-style: normal;
 	font-size: 2em;
     margin: 0px auto 10px auto;
+	padding: 10px;
     color: black;
 }
 
@@ -102,11 +103,58 @@ h2 {
 	 font-family: lust-sans, sans-serif;
 	 font-weight: 400;
 	 font-style: normal;
-	 font-size: 1.5em;
-    line-height: 1.4;
+	 font-size: 1.2em;
+    line-height: 1.6;
+	width: 70%;
     color: black;
     padding: 0px 0px;
     margin: 0px auto 25px auto;
+
+	animation: fadeIn ease 3s;
+	-webkit-animation: fadeIn ease 3s;
+	-moz-animation: fadeIn ease 3s;
+	-o-animation: fadeIn ease 3s;
+	-ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+@-moz-keyframes fadeIn {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+@-o-keyframes fadeIn {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}    
+@-ms-keyframes fadeIn {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
 }
 
 p {
@@ -121,11 +169,11 @@ p {
     color: black;
 
 /* testing out fading in and out */
-	animation: fadeIn ease 6s;
-	-webkit-animation: fadeIn ease 6s;
-	-moz-animation: fadeIn ease 6s;
-	-o-animation: fadeIn ease 6s;
-	-ms-animation: fadeIn ease 6s;
+	animation: fadeIn ease 3s;
+	-webkit-animation: fadeIn ease 3s;
+	-moz-animation: fadeIn ease 3s;
+	-o-animation: fadeIn ease 3s;
+	-ms-animation: fadeIn ease 3s;
 }
 @keyframes fadeIn {
 	0% {
@@ -176,11 +224,12 @@ nav{
     color: #fff;
 	width: 400px;
 	margin: 0 auto;
-	border:solid white;
-	border-width: 3px 3px;
+	/* removed border:solid white; */
+	/* removed border-width: 3px 3px; */
 	text-align: center;
 	margin-bottom: 40px;
 	margin-top: 40px;
+	width: 70%;
 	}
 
 nav li{
